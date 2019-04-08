@@ -1,0 +1,17 @@
+import math
+
+def summit(num1, num2):
+    return num1 + num2
+
+print(summit(3,6))
+
+print(math.ceil(3.5))
+""">>> 9
+   >>> 4
+   >>> 3.14159265358793 -> can't print all numbers?
+"""
+
+""" if I create new file, and define new function.
+    then create another file, import the file that I created first.
+    after this, I can use the function in the first file by '(filename).(functionname)'
+"""
