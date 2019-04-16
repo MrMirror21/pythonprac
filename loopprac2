@@ -1,0 +1,25 @@
+import random
+print(input("When you want to start, press any key."))
+guessnum = random.randrange(0,100)
+usernum = ""
+while True:
+    usernum = int(input("Your answer : "))
+    print(guessnum)
+    print("if this number is bigger than your thought, press 2")
+    print("if this number is smaller than your thought, press 0")
+    print("if this number is the number that you thought, press 1")
+    print(input("Your answer : "))
+    
+    if usernum == 1:
+        print("I knew it! I won!")
+        break
+    if usernum == 2:
+        guessnum = random.randrange(guessnum,100)
+        continue
+    if usernum == 0:
+        guessnum = random.randrange(0, guessnum)
+        continue
+
+"""
+not done yet, it's not working properly.
+"""
