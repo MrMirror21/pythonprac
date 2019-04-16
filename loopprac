@@ -1,0 +1,23 @@
+import random
+"""
+when user input some random number in range(0,10),
+this program pick also some random number in the range.
+if user piced the same number as the program did, user win this game.
+if the user didn't, loop the program til' he/she pick the right number.
+"""
+num = ""
+intRandom = random.randrange(0, 10)
+while True:
+	print(input("Guess the Number! : "))
+	num = int(input("Guess the Number! : "))
+	
+	if num != intRandom:
+		print(input("Guess the Number! : "))
+	elif num == intRandom:
+		break
+	print("You're Correct!")
+  
+  """
+  Currently, There's an error that after user input any number, that number randomly appear in the next line.
+  """
+    
